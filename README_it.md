@@ -4,6 +4,13 @@ Uno strumento basato su Python per la pianificazione dei turni da dati CSV con p
 
 ## Utilizzo
 
+### Passaggio preliminare: ambiente di esecuzione
+Lista degli elementi necessari (o consigliati) per seguire comodamente il procedimento
+- IDE per Python (VisualStudio/PyCharm)
+- Plugin per visualizzare CSV (EditCSV per Visual Studio)
+- Python > 3.11
+- ! Google OR-Tools module - `python3 -m pip install ortools` da terminale
+
 ### Passaggio 1: Preparare i Dati di Input
 Assicurarsi che la tabella principale delle disponbilità sia compilata nel modo corretto (segue foto)
 - ogni riga corrisponde ad un borsista (tabella sinistra azzurra in foto)
