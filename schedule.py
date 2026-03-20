@@ -470,7 +470,7 @@ with open(config.SCHEDULE_OUTPUT, mode="w", newline="", encoding="utf-8") as f:
             emp_shifts = matrix_data[emp].get(d, [])
             merged_shifts = merge_time_ranges(emp_shifts)
             row.append(" / ".join(merged_shifts))
-        row.append(week_hours[emp])
+        row.append(str(week_hours[emp]).replace('.',','))
         writer.writerow(row)
 
 print(f"\nSchedule saved to: {config.SCHEDULE_OUTPUT}")
